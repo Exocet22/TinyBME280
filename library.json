@@ -1,0 +1,25 @@
+{
+  "name": "TinyBME280",
+  "version": "1.0.0",
+  "description": "A tiny Arduino library for BME280 module running on ESP8266/ESP32 platform.",
+  "keywords": "bme280,arduino,esp32,esp8266",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/exocet22/TinyBME280"
+  },
+  "authors":
+  [
+    {
+      "name": "Yvan Régeard",
+      "email": "yvan.regeard@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "esp32,esp8266",
+  "export":
+  {
+    "include": ["src", "examples", "LICENSE.txt"]
+  }
+}

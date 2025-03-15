@@ -1,7 +1,7 @@
 {
   "name": "TinyBME280",
-  "version": "1.0.0",
-  "description": "A tiny Arduino library for BME280 module running on ESP8266/ESP32 platform.",
+  "version": "1.1.0",
+  "description": "A tiny Arduino library for BME280 module running on ESP8266 and ESP32.",
   "keywords": "bme280,arduino,esp32,esp8266",
   "repository":
   {

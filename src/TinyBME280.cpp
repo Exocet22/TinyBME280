@@ -30,12 +30,9 @@
   // Initialize device
   bool BME280::initialize(uint8_t sda_pin,uint8_t scl_pin,uint32_t bus_frequency)
   {
-    // Release SDA and SCL pins
-    pinMode(sda_pin,INPUT);
-    pinMode(scl_pin,INPUT);
-
     // Initialize I2C bus
-    if (!Wire.begin(sda_pin,scl_pin,bus_frequency)) return false;
+    Wire.begin(sda_pin,scl_pin);
+    Wire.setClock(bus_frequency);
 
     // Read compensation values block #1 (24 bytes)
     Wire.beginTransmission(m_address);
